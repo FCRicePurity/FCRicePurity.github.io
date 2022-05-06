@@ -75,7 +75,7 @@ export default function Navbar({ numChecked, setFinalScore, scoreRef }) {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="https://github.com/FCRicePurity/FCRicePurity.github.io/tree/main"
+                href="https://github.com/FCRicePurity/FCRicePurity.github.io"
                 target="_blank"
                 rel="noreferrer noopener"
               >
