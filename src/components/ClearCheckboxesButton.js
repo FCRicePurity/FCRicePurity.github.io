@@ -1,4 +1,4 @@
-export default function ClearCheckboxesButton({ scoreRef }) {
+export default function ClearCheckboxesButton({ setNumChecked, scoreRef }) {
   return (
     <button
       className="btn btn-secondary nav-btn me-2"
@@ -8,6 +8,7 @@ export default function ClearCheckboxesButton({ scoreRef }) {
         document
           .querySelectorAll("input[type=checkbox]")
           .forEach((el) => (el.checked = false));
+        setNumChecked(100);
       }}
     >
       Clear Checkboxes

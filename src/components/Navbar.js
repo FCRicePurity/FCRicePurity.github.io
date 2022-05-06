@@ -1,6 +1,11 @@
 import CalculateButton from "./CalculateButton";
 import ClearCheckboxesButton from "./ClearCheckboxesButton";
-export default function Navbar({ numChecked, setFinalScore, scoreRef }) {
+export default function Navbar({
+  numChecked,
+  setNumChecked,
+  setFinalScore,
+  scoreRef,
+}) {
   return (
     <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -84,7 +89,10 @@ export default function Navbar({ numChecked, setFinalScore, scoreRef }) {
             </li>
           </ul>
           <form className="d-flex">
-            <ClearCheckboxesButton scoreRef={scoreRef}></ClearCheckboxesButton>
+            <ClearCheckboxesButton
+              scoreRef={scoreRef}
+              setNumChecked={setNumChecked}
+            ></ClearCheckboxesButton>
             <CalculateButton
               numChecked={numChecked}
               setFinalScore={setFinalScore}

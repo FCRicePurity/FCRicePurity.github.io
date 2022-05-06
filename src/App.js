@@ -12,6 +12,7 @@ function App() {
     <div>
       <Navbar
         numChecked={numChecked}
+        setNumChecked={setNumChecked}
         setFinalScore={setFinalScore}
         scoreRef={scoreRef}
       ></Navbar>
