@@ -1,6 +1,6 @@
 export default function Intro({ finalScore, scoreRef }) {
   function roast(num) {
-    if (num == 100) {
+    if (num === 100) {
       return "Haven't touched a team yet.";
     }
     if (num > 85) {

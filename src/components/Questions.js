@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 let questionarray = [
   "POOPed?",
   "HOOPed?",
