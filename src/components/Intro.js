@@ -17,9 +17,11 @@ export default function Intro({ finalScore, scoreRef }) {
     }
     return "Official Foundations whore.";
   }
+
   let score = null;
   if (finalScore !== null)
     score = "You scored " + finalScore + "! Rating: " + roast(finalScore);
+
   return (
     <section id="intro" className="container">
       <h1 className="display-1">The "Official" Foundations Purity Test</h1>

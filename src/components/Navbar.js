@@ -6,6 +6,34 @@ export default function Navbar({
   setFinalScore,
   scoreRef,
 }) {
+  const navItemLinks = [
+    "https://www.instagram.com/foundationschoreo/",
+    "https://www.facebook.com/FoundationsChoreo",
+    "https://www.youtube.com/c/FoundationsChoreography",
+    "https://lnk.bio/dxlo/",
+    "https://github.com/FCRicePurity/FCRicePurity.github.io",
+  ];
+  const navItemNames = [
+    "Instagram",
+    "Facebook",
+    "Youtube",
+    "Useful Links",
+    "Source Code",
+  ];
+
+  const makeNavItems = (link, index) => (
+    <li className="nav-item">
+      <a
+        className="nav-link"
+        href={link}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        {navItemNames[index]}
+      </a>
+    </li>
+  );
+
   return (
     <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -37,56 +65,7 @@ export default function Navbar({
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav me-auto">
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://www.instagram.com/foundationschoreo/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Instagram
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://www.facebook.com/FoundationsChoreo"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Facebook
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://www.youtube.com/c/FoundationsChoreography"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Youtube
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://lnk.bio/dxlo/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Useful Links
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://github.com/FCRicePurity/FCRicePurity.github.io"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Source Code
-              </a>
-            </li>
+            {navItemLinks.map(makeNavItems)}
           </ul>
           <form className="d-flex">
             <ClearCheckboxesButton

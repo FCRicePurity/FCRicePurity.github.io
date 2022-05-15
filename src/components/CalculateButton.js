@@ -3,14 +3,16 @@ export default function CalculateButton({
   setFinalScore,
   scoreRef,
 }) {
+  const displayFinalScore = () => {
+    setFinalScore(numChecked);
+    scoreRef.current.scrollIntoView({ block: "center" });
+  };
+
   return (
     <button
       className="btn btn-secondary nav-btn"
       type="button"
-      onClick={() => {
-        setFinalScore(numChecked);
-        scoreRef.current.scrollIntoView({ block: "center" });
-      }}
+      onClick={displayFinalScore}
     >
       Calculate Score
     </button>
