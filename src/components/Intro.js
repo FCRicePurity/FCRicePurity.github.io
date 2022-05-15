@@ -24,14 +24,14 @@ export default function Intro({ finalScore, scoreRef }) {
 
   return (
     <section id="intro" className="container">
-      <h1 className="display-1">The "Official" Foundations Purity Test</h1>
-      <p className="fs-4 body">
-        The Foundations Purity Test serves to catalogue the "true" Foundations
-        experience here at UCLA. It is an opportunity for Foundations dancers to
-        bond over shared experiences and track how Foundations Choreography has
-        become embedded in their lives.
+      <img src="banner.PNG" className="img-fluid" id="banner" alt="..."></img>
+      <p className="body">
+        The <b>FC Purity Test</b> serves to catalogue the "true" UCLA
+        Foundations experience. It is an opportunity for dancers to bond over
+        shared experiences and see how Foundations Choreography has become
+        embedded in their lives.
       </p>
-      <p className="fs-4 body warning">
+      <p className="body warning">
         Caution: This is not a bucket list. Completion of all items on this test
         will likely result in getting too lit.
       </p>

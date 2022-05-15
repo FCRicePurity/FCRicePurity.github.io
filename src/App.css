@@ -4,7 +4,6 @@ body {
 }
 
 #intro {
-  font-size: 1.2em;
   display: flex;
   margin: 0 auto;
   text-align: center;
@@ -13,7 +12,6 @@ body {
 }
 
 .body {
-  text-align: left;
   padding: 0 8%;
 }
 
@@ -30,8 +28,20 @@ input {
   margin-bottom: 0.5em;
 }
 
+#banner {
+  margin: 1rem 0;
+}
 #logo {
   margin-right: 0.25em;
   width: 25px;
   height: 25px;
+}
+
+.body {font-size:1.15rem;} 
+ 
+@media (min-width: 760px) {
+  .body {font-size:1.325rem;}
+}
+@media (min-width: 1200px) {  
+  .body {font-size:1.5rem;}     
 }
