@@ -21,18 +21,24 @@ export default function Navbar({
     "Source Code",
   ];
 
-  const makeNavItems = (link, index) => (
-    <li className="nav-item">
-      <a
-        className="nav-link"
-        href={link}
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        {navItemNames[index]}
-      </a>
-    </li>
-  );
+  const makeNavItems = () => {
+    let navItems = new Array(navItemNames.length);
+    for (let i = 0; i < navItems.length; i++) {
+      navItems[i] = (
+        <li className="nav-item" key={i}>
+          <a
+            className="nav-link"
+            href={navItemLinks[i]}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {navItemNames[i]}
+          </a>
+        </li>
+      );
+    }
+    return navItems;
+  };
 
   return (
     <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -44,10 +50,9 @@ export default function Navbar({
           rel="noreferrer noopener"
         >
           <img
+            id="logo"
             src="fc2.png"
-            alt=""
-            width="25"
-            heigh="25"
+            alt="LOGO"
             className="d-inline-block align-text-top"
           ></img>
           Foundations Choreography
@@ -64,9 +69,7 @@ export default function Navbar({
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav me-auto">
-            {navItemLinks.map(makeNavItems)}
-          </ul>
+          <ul className="navbar-nav me-auto">{makeNavItems()}</ul>
           <form className="d-flex">
             <ClearCheckboxesButton
               scoreRef={scoreRef}

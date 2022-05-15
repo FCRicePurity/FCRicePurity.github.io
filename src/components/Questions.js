@@ -1,14 +1,14 @@
 import questionarray from "./questionarray";
 
 export default function Questions({ setNumChecked }) {
-  function handleScoreUpdate(e) {
+  const handleScoreUpdate = (e) => {
     const checked = e.target.checked;
     if (checked) {
       setNumChecked((prevNum) => prevNum - 1);
     } else {
       setNumChecked((prevNum) => prevNum + 1);
     }
-  }
+  };
   const olClasses = "list-group list-group-numbered";
   const liClasses =
     "list-group-item d-flex justify-content-start align-items-start bg-transparent border-0 fs-6";

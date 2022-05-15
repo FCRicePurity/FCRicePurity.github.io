@@ -30,6 +30,8 @@ input {
   margin-bottom: 0.5em;
 }
 
-img {
+#logo {
   margin-right: 0.25em;
+  width: 25px;
+  height: 25px;
 }
