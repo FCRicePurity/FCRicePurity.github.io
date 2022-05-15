@@ -30,6 +30,7 @@ input {
 
 .modal-content {
   border-color: white;
+  border-width: 3px;
 }
 
 #banner {
