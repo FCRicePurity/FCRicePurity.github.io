@@ -28,6 +28,10 @@ input {
   margin-bottom: 0.5em;
 }
 
+.modal-content {
+  border-color: white;
+}
+
 #banner {
   margin: 1rem 0;
 }
@@ -37,11 +41,34 @@ input {
   height: 25px;
 }
 
+#logoModal {
+  width: 33px;
+  height: 33px;
+}
+
+#score {
+  margin-right: 1px;
+}
+
 .body {font-size:1.15rem;} 
  
 @media (min-width: 760px) {
   .body {font-size:1.325rem;}
+  #logoModal {
+    width: 40px;
+    height: 40px;
+  }
+  #score {
+    margin-right: 8px;
+  }
 }
 @media (min-width: 1200px) {  
-  .body {font-size:1.5rem;}     
+  .body {font-size:1.5rem;}    
+  #logoModal {
+    width: 50px;
+    height: 50px;
+  } 
+  #score {
+    margin-right: 18px;
+  }
 }

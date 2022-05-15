@@ -1,6 +1,6 @@
-export default function ClearCheckboxesButton({ setNumChecked, scoreRef }) {
+export default function ClearCheckboxesButton({ setNumChecked }) {
   const clearCheckboxes = () => {
-    scoreRef.current.scrollIntoView({ block: "center" });
+    window.scrollTo(0, 0);
     document
       .querySelectorAll("input[type=checkbox]")
       .forEach((el) => (el.checked = false));

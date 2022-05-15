@@ -1,11 +1,6 @@
 import CalculateButton from "./CalculateButton";
 import ClearCheckboxesButton from "./ClearCheckboxesButton";
-export default function Navbar({
-  numChecked,
-  setNumChecked,
-  setFinalScore,
-  scoreRef,
-}) {
+export default function Navbar({ setNumChecked }) {
   const navItemLinks = [
     "https://www.instagram.com/foundationschoreo/",
     "https://www.facebook.com/FoundationsChoreo",
@@ -72,14 +67,9 @@ export default function Navbar({
           <ul className="navbar-nav me-auto">{makeNavItems()}</ul>
           <form className="d-flex">
             <ClearCheckboxesButton
-              scoreRef={scoreRef}
               setNumChecked={setNumChecked}
             ></ClearCheckboxesButton>
-            <CalculateButton
-              numChecked={numChecked}
-              setFinalScore={setFinalScore}
-              scoreRef={scoreRef}
-            ></CalculateButton>
+            <CalculateButton></CalculateButton>
           </form>
         </div>
       </div>
