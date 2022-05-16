@@ -3,9 +3,7 @@ export default function CalculateButton({ setNumChecked }) {
     const checkboxes = document.querySelectorAll("input");
     let i = 100;
     for (let el of checkboxes) {
-      if (el.checked) {
-        i--;
-      }
+      i -= el.checked ? 1 : 0;
     }
     return i;
   };

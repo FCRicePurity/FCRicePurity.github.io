@@ -1,32 +1,4 @@
-import { useEffect } from "react";
-
 export default function ScoreResult({ numChecked }) {
-  //   const isVisible = (elm) => {
-  //     var rect = elm.getBoundingClientRect();
-  //     var viewHeight = Math.max(
-  //       document.documentElement.clientHeight,
-  //       window.innerHeight
-  //     );
-  //     return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
-  //   };
-
-  //   const onRemove = () => {
-  //     // if (isVisible(document.querySelector("#b98"))) {
-  //     window.scrollTo(0, 0);
-  //     // }
-  //   };
-  //   useEffect(() => {
-  //     let scoreModal = document.querySelector(".modal");
-  //     scoreModal.addEventListener("hidden.bs.modal", onRemove);
-  //     // console.log("ADDED");
-  //     return () => {
-  //       document
-  //         .querySelector(".modal")
-  //         .removeEventListener("hidden.bs.modal", onRemove);
-  //       // console.log("REMOVED");
-  //     };
-  //   });
-
   function roast(num) {
     if (num === 100) {
       return "Haven't touched a team yet";
