@@ -14,12 +14,12 @@ function App() {
       <Navbar setNumChecked={setNumChecked}></Navbar>
       <Intro></Intro>
       <ScoreResult numChecked={numChecked}></ScoreResult>
-      <Questions setNumChecked={setNumChecked}></Questions>
+      <Questions></Questions>
       <div className="bottomButton">
         <ClearCheckboxesButton
           setNumChecked={setNumChecked}
         ></ClearCheckboxesButton>
-        <CalculateButton></CalculateButton>
+        <CalculateButton setNumChecked={setNumChecked}></CalculateButton>
       </div>
     </div>
   );

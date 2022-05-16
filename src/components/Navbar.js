@@ -69,7 +69,7 @@ export default function Navbar({ setNumChecked }) {
             <ClearCheckboxesButton
               setNumChecked={setNumChecked}
             ></ClearCheckboxesButton>
-            <CalculateButton></CalculateButton>
+            <CalculateButton setNumChecked={setNumChecked}></CalculateButton>
           </form>
         </div>
       </div>
