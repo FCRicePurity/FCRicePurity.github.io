@@ -13,7 +13,7 @@ export default function ClearCheckboxesButton({ setNumChecked }) {
       type="button"
       onClick={clearCheckboxes}
     >
-      Clear Checkboxes
+      Start Over
     </button>
   );
 }
