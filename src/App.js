@@ -16,10 +16,10 @@ function App() {
       <ScoreResult numChecked={numChecked}></ScoreResult>
       <Questions></Questions>
       <div className="bottomButton">
+        <CalculateButton setNumChecked={setNumChecked}></CalculateButton>
         <ClearCheckboxesButton
           setNumChecked={setNumChecked}
         ></ClearCheckboxesButton>
-        <CalculateButton setNumChecked={setNumChecked}></CalculateButton>
       </div>
     </div>
   );

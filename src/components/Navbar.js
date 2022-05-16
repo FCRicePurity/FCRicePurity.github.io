@@ -66,10 +66,10 @@ export default function Navbar({ setNumChecked }) {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav me-auto">{makeNavItems()}</ul>
           <form className="d-flex">
+            <CalculateButton setNumChecked={setNumChecked}></CalculateButton>
             <ClearCheckboxesButton
               setNumChecked={setNumChecked}
             ></ClearCheckboxesButton>
-            <CalculateButton setNumChecked={setNumChecked}></CalculateButton>
           </form>
         </div>
       </div>

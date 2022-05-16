@@ -9,7 +9,7 @@ export default function CalculateButton({ setNumChecked }) {
   };
   return (
     <button
-      className="btn btn-secondary nav-btn"
+      className="btn btn-secondary nav-btn me-2"
       type="button"
       data-bs-toggle="modal"
       data-bs-target="#scoreModal"
