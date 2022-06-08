@@ -3,7 +3,7 @@
 
 # Foundations Choreography
 
-UCLA's Foundations Choreography is an organization meant to create a safe space for beginner/intermediate dancers to grow, train, and challenge themselves! The <a href="https://fcricepurity.github.io/">FC Purity Test</a> serves to catalogue the UCLA Foundations experience. It is an opportunity for dancers to bond over shared experiences and see how Foundations Choreography has become embedded in their lives.
+UCLA's <a href="https://www.instagram.com/foundationschoreo/?hl=en">Foundations Choreography</a> is an organization meant to create a safe space for beginner/intermediate dancers to grow, train, and challenge themselves! The <a href="https://fcricepurity.github.io/">FC Purity Test</a> serves to catalogue the UCLA Foundations experience. It is an opportunity for dancers to bond over shared experiences and see how Foundations Choreography has become embedded in their lives.
 
 # Technology of Website
 
